@@ -12,7 +12,7 @@
 
 theme                  : "studio8502-theme"
 remote_theme           : "studio8502/studio8502-theme"
-
+studio8502-theme-skin  : "default"
 # Site Settings
 locale                   : "en-CA"
 title                    : "Studio 8502"
