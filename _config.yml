@@ -10,20 +10,19 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "studio8502-theme"
-# remote_theme           : "studio8502/studio8502-theme"
-minimal_mistakes_skin    : "default" 
+theme                  : "studio8502-theme"
+remote_theme           : "studio8502/studio8502-theme"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-CA"
 title                    : "Studio 8502"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Studio 8502"
 description              : "Retrocomputing Makers and Designers"
 url                      : https://studio8502.github.io
-baseurl                  : /"
-repository               : # studio8502/studio8502.github.io"
+baseurl                  : /
+repository               : studio8502/studio8502.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -67,7 +66,6 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
@@ -86,20 +84,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins (previously gems:)
 plugins:
@@ -124,7 +108,6 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
