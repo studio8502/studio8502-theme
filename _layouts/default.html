@@ -16,7 +16,7 @@
 			* to each stylesheet URL.
 			*/
 			function reloadStylesheets() {
-				var queryString = 'default.css?' + new Date().getTime();
+				var queryString = '?reload=' + new Date().getTime();
 				$('link[rel="stylesheet"]').each(function () {
 					this.href = this.href.replace(/\?.*|$/, queryString);
 				});
