@@ -17,7 +17,7 @@
 			*/
 			function reloadStylesheets() {
 				var queryString = 'default.css?' + new Date().getTime();
-				$('link[id="stylesheet"]').each(function () {
+				$('link[rel="stylesheet"]').each(function () {
 					this.href = this.href.replace(/\?.*|$/, queryString);
 				});
 			}
