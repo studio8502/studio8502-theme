@@ -5,12 +5,26 @@
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
-  		<link rel="stylesheet" href="default.css?id=1234">
+  		<link rel="stylesheet" href="default.css?reload">
   		<link rel="preload" href="/C64_Pro-STYLE.woff" as="font">
   		<link rel="preload" href="/C64_Pro-STYLE.woff2" as="font">
 		<link rel="me" href="https://oldbytes.space/@mos_8502">
+
+		<script type="text/javascript">
+			/**
+			* Forces a reload of all stylesheets by appending a unique query string
+			* to each stylesheet URL.
+			*/
+			function reloadStylesheets() {
+				var queryString = '?reload';
+				$('link[rel="stylesheet"]').each(function () {
+					this.href = this.href.replace(/\?.*|$/, queryString);
+				});
+			}
+		</script>
+
 	</head>
-	<body>
+	<body onload="reloadStylesheets()">
 		<header>
 			<h1>Studio 8502</h1>
 			<p>Retrocomputing Designers and Makers</p>
